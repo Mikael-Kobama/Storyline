@@ -3,7 +3,7 @@ const MyNameApp = {
   data() {
     return {
       name: "Mikael",
-      idade: 30, // nome a ser exibido no HTML
+      age: 30, // nome a ser exibido no HTML
     };
   },
 };

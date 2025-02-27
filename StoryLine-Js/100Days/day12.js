@@ -5,10 +5,8 @@ function verificarBalanceamento(exp) {
     "[": "]",
     "{": "}",
   };
-
   for (let i = 0; i < exp.length; i++) {
     const char = exp[i];
-
     // Se o caractere for um delimitador de abertura, empilhamos
     if (pares[char]) {
       pilha.push(char);
@@ -24,10 +22,9 @@ function verificarBalanceamento(exp) {
   // Se a pilha estiver vazia, todos os delimitadores foram balanceados
   return pilha.length === 0;
 }
-
 // Exemplos de uso:
 console.log(verificarBalanceamento("(a + b) * {c + [d + (e)]}")); // true
 console.log(verificarBalanceamento("{[a + b} * c]")); // false
 console.log(verificarBalanceamento("((a + b) * c)")); // true
 console.log(verificarBalanceamento("a + b * c")); // true
-console.log(verificarBalanceamento("{[a + b] * (c + d)")); // false
+console.log(verificarBalanceamento("{[a + b] * (c + d)")); // fals

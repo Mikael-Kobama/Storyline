@@ -4,12 +4,10 @@ function mergeSort(arr) {
   if (arr.length <= 1) {
     return arr;
   }
-
   // Encontrar o ponto médio do array
   const meio = Math.floor(arr.length / 2);
-
   // Dividir o array em duas metades
-  const esquerda = mergeSort(arr.slice(0, meio));
+  const esquerda = mergeSort(arr.slice(0, meio)); 
   const direita = mergeSort(arr.slice(meio));
 
   // Função para mesclar duas listas ordenadas
